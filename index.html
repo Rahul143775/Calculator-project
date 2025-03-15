@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <main class="container">
+        <section id="screen">
+            <div id="display">0</div>
+        </section>
+        <section class="button-box">
+            <!-- Row 1 -->
+            <div class="row">
+                <button id="clear" onclick="tapclear('AC')">AC</button>
+                <button id="percent" onclick="tapoperator('%')">%</button>
+                <button id="delete" onclick="tapDel('DEL')">DEL</button>
+                <button id="divide" onclick="tapoperator('/')">/</button>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+                <button class="num" onclick="tapnum('7')">7</button>
+                <button class="num" onclick="tapnum('8')">8</button>
+                <button class="num" onclick="tapnum('9')">9</button>
+                <button id="multiply" onclick="tapoperator('*')">*</button>
+            </div>
+            <!-- Row 3 -->
+            <div class="row">
+                <button class="num" onclick="tapnum('4')">4</button>
+                <button class="num" onclick="tapnum('5')">5</button>
+                <button class="num" onclick="tapnum('6')">6</button>
+                <button id="subtract" onclick="tapoperator('-')">-</button>
+            </div>
+            <!-- Row 4 -->
+            <div class="row">
+                <button class="num" onclick="tapnum('1')">1</button>
+                <button class="num" onclick="tapnum('2')">2</button>
+                <button class="num" onclick="tapnum('3')">3</button>
+                <button id="add" onclick="tapoperator('+')">+</button>
+            </div>
+            <!-- Row 5 -->
+            <div class="row">
+                <button id="zero" onclick="tapnum('0')">0</button>
+                <button id="dot" onclick="tapnum('.')">.</button>
+                <button id="equals" onclick="tapoperator('=')">Enter</button>
+            </div>
+        </section>
+    </main>
+    <script src="./calculator.js"></script>
+</body>
+</html>
